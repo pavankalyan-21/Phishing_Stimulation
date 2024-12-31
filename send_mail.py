@@ -39,7 +39,7 @@ try:
     # sending email
     smtp.sendmail(From_Email, To_Email, message.as_string())
     print("[*]Email sent successfully!")
-    # throw exception when the email address is incorrect or password is wrong
+# throw exception when the email address is incorrect or password is wrong
 except Exception as e:
     print(f"[!] An error occurred: {e}")
 finally:
