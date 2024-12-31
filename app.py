@@ -5,7 +5,7 @@ app = Flask(__name__)
 def db_connection():
     conn = sqlite3.connect('phishing_log.db')
     return conn
-def initialize_database():
+def set_up_database():
     conn = db_connection()
     with conn:
         # creating table with columns number, username, password and timestamp
@@ -17,7 +17,7 @@ def initialize_database():
                 timestamp TEXT NOT NULL)
         ''')
     conn.close()
-initialize_database()
+set_up_database()
 @app.route('/')
 def login_page():
     return render_template('login_page.html')
