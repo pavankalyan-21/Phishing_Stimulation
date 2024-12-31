@@ -33,7 +33,7 @@ This project simulates a phishing attack for educational purposes, with a focus 
 2.**Send Emails**:
    Modify email credentials in `send_mail.py` and run the script to send phishing emails.
    ```bash
-   python send_mail.py
+     python send_mail.py
    ```   
 3. **Run the Application**:
    ```bash
